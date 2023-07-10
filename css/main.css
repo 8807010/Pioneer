@@ -3,6 +3,7 @@
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --gap: 20px;
   --accent: #607ce6;
   --dark: #333;
   --light: #fff;
@@ -72,6 +73,7 @@ html {
 }
 
 img {
+  display: block;
   height: auto;
   max-width: 100%;
   object-fit: cover;
@@ -151,4 +153,58 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray);
+  padding: 35px 0;
+}
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+.header__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 180px;
+}
+.header__caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: right;
+  color: var(--dark);
+}
+.header__link {
+  border-bottom: 1px solid currentColor;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: right;
+  color: var(--accent);
+}
+.header__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.header__btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
