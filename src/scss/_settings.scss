@@ -117,3 +117,12 @@ a {
   grid-template-columns: repeat(12, 1fr);
   gap: var(--gap);
 }
+
+.section-title {
+  margin: 0;
+  margin-bottom: var(--lg);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--dark);
+}
