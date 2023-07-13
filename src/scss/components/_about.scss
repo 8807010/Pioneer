@@ -30,6 +30,7 @@
 
   &__image {
     grid-column: 6 span;
+    width: 100%;
 
     @include small-tablet {
       grid-column: 4 span;

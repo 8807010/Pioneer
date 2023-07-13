@@ -7,6 +7,18 @@
 
   &__item {
     grid-column: 4 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include small-tablet {
+      grid-column: 2 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 }
 
