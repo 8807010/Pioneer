@@ -8,6 +8,10 @@
   &__item {
     grid-column: 4 span;
 
+    &:focus {
+      outline: none;
+    }
+
     @include tablet {
       grid-column: 6 span;
     }
@@ -31,8 +35,17 @@
   height: 100%;
   min-height: 435px;
   background: var(--light-gray);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+  @include hover {
+    & img {
+      transform: scale(1.1);
+    }
+  }
 
   &__image {
+    transition: transform 0.3s ease-in-out;
     max-height: 200px;
   }
 
@@ -62,6 +75,19 @@
     font-size: 20px;
     line-height: 120%;
     color: var(--accent);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: #364fa8;
+    }
+
+    &:active {
+      color: #364fa8;
+    }
 
     &::after {
       content: "";
@@ -79,4 +105,8 @@
   @include tablet {
     min-height: 360px;
   }
+}
+
+.products-card__link.focus-visible {
+  outline: 1px solid var(--accent);
 }

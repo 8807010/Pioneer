@@ -84,6 +84,19 @@
     font-size: 20px;
     text-align: right;
     color: var(--accent);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: #364fa8;
+    }
+
+    &:active {
+      color: #364fa8;
+    }
   }
 
   &__btn {
@@ -95,6 +108,19 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--accent);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: #364fa8;
+    }
+
+    &:active {
+      color: #364fa8;
+    }
 
     svg {
       width: 16px;
@@ -126,4 +152,19 @@
   opacity: 1;
   visibility: visible;
   transform: none;
+}
+
+.header__link.focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.header__btn.focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.header__logo.focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
 }
