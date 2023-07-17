@@ -12,7 +12,6 @@
 
     @include small-tablet {
       margin-bottom: var(--gap);
-
     }
   }
 
@@ -34,11 +33,11 @@
     }
 
     @include hover {
-      color: #364fa8;
+      color: var(--accent);
     }
 
     &:active {
-      color: #364fa8;
+      color: var(--accent);
     }
   }
 

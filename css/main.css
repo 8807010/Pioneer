@@ -944,11 +944,11 @@ a {
 }
 @media (any-hover: hover) {
   .footer__link:hover {
-    color: #364fa8;
+    color: var(--accent);
   }
 }
 .footer__link:active {
-  color: #364fa8;
+  color: var(--accent);
 }
 @media (max-width: 768px) {
   .footer__list {
