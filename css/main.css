@@ -880,7 +880,7 @@ a {
   border-radius: 100%;
   width: 60px;
   height: 60px;
-  box-shadow: 10px 0px 23px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 0px 23px 9px rgba(34, 60, 80, 0.2);
   background-color: var(--light);
   transform: translateY(-50%);
 }
